@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivimage"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:src="@drawable/macaron"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circular"
+        android:scaleType="centerCrop"/>
+
+    <SearchView
+        android:id="@+id/svBuscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/searchview_border"
+        android:backgroundTint="@color/white"
+        android:iconifiedByDefault="false"
+        android:alpha="0.7"
+        android:queryHint="Search food...."
+        android:layout_marginTop="15dp"
+        android:queryBackground="@null"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/LinearPublicidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/ivimage">
+
+        <View
+            android:layout_width="55dp"
+            android:layout_height="10dp"
+            android:background="@drawable/view_border"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/naranja"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tvFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fast Food"
+            android:textAlignment="center"
+            android:textSize="33dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Only today this fast food offer"
+            android:textAlignment="center"
+            android:textColor="@color/gris"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="130dp"
+            android:layout_gravity="center"
+            android:text="$5.00"
+            android:textStyle="bold"
+            android:background="@drawable/textview_border"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@color/naranja"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipisc- ing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            android:textAlignment="center"
+            android:textColor="@color/gris"
+            android:textSize="17dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Order Now"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:background="@drawable/button_border"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
